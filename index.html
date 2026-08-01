@@ -1,9 +1,172 @@
-<html>
- 
-<body>
-  <h1>Andrea</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<!--Block Search indexing with noindex-->
+    <meta name="robots" content="noindex">
+    <title>Andrea Miggiano | Perfil</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#007fff">
+    <meta name="apple-mobile-web-app-title" content="Andrea">
+    <meta name="application-name" content="Andrea">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <!--Viewport for mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/device-fixes.js"></script>
+    <script>
+        if (new URLSearchParams(window.location.search).get('lang') === 'en') {
+            document.documentElement.classList.add('i18n-loading');
+        }
+    </script>
+</head>
+
+<body data-page="profile">
+<a id="language-switcher" data-i18n-ignore href="?lang=en" aria-label="Cambiar a inglés">EN</a>
+<header class="container jumbo">
+        <div class="row jumbo">
+            <h1 class="col-sm-6"><a class="andrea-miggiano" href="index.html"><img id="am-logo" src="images/am-logo.svg" alt="am logo">Andrea Miggiano</a></h1>
+            <nav class="col-sm-6 text-right">
+                <a href="index.html">Perfil</a>
+                <a class="bar">&#124;</a>
+                <a href="education.html">Formación</a>
+                <a class="bar">&#124;</a>
+                <a href="experience.html">Experiencia</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--MAIN IMAGE-->
+    <section class="jumbotron">
+        <div class="container">
+            <div class="hero-panel">
+                <h2 class="hero-title">Profesional comercial</h2>
+                <p class="hero-line hero-line-desktop">Venta consultiva · Gestión de clientes</p>
+                <div class="hero-lines-mobile">
+                    <p class="hero-line">Venta consultiva</p>
+                    <p class="hero-line">Gestión de clientes</p>
+                </div>
+                <p class="hero-line hero-line-small">Organización comercial</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container profile-section profile-section--primary">
+        <div>
+            <h2>Perfil profesional</h2>
+            <div class="exp intro profile-block">
+                <img id="meimg" src="images/me.webp" alt="Retrato de Andrea Miggiano">
+                <p>Hola, me llamo Andrea Miggiano.</p>
+                <p>Soy un profesional comercial con amplia experiencia en venta B2B y retail especializado, gestión y desarrollo de cartera, planificación de rutas y seguimiento de objetivos. He trabajado con productos, servicios y sectores muy diferentes, lo que me ha permitido desarrollar una gran capacidad de adaptación y aprendizaje.</p>
+                <p>Mi forma de vender se basa en escuchar, comprender las necesidades reales del cliente y proponer soluciones útiles mediante una venta consultiva. Combino la orientación a resultados con la organización, el seguimiento y la construcción de relaciones comerciales duraderas.</p>
+                <p>Me interesa aportar esta experiencia en un entorno profesional bien organizado, donde se valoren la autonomía, el compromiso con el cliente y el trabajo bien hecho.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container profile-section profile-section--internal">
+        <div>
+            <h2>Cómo entiendo las ventas</h2>
+            <div class="histo profile-block">
+                <p>Las ventas fueron un trabajo que me encontró a mí y no al contrario. Entré en este mundo profesional casi por casualidad, a través de unos amigos, y con el tiempo entendí qué era lo que me había atrapado: el dinamismo, la ausencia de rutina y la necesidad permanente de evolucionar.</p>
+                <p>Vender exige desempeñar muchos papeles. Hay que saber buscar oportunidades, escuchar activamente, comprender problemas diferentes y plantear soluciones adaptadas a cada cliente. También hay que negociar, organizarse, mantener la calma en los momentos difíciles y aceptar que los resultados no siempre son inmediatos.</p>
+                <p>Me gusta tanto abrir una puerta nueva como desarrollar una relación comercial estable que se consolida con el tiempo. La prospección es necesaria, pero también lo son el seguimiento, el servicio y la capacidad de convertir una primera venta en un cliente recurrente.</p>
+                <p>Es una profesión en la que nunca se deja de aprender: cambian los productos, los mercados, las herramientas y las expectativas de los clientes. Esa evolución continua es una de las razones por las que nunca me ha resultado monótona.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container profile-section profile-section--internal">
+        <div>
+            <h2>Tecnología aplicada al trabajo</h2>
+            <div class="ending profile-block">
+                <p>Siempre me ha interesado comprender y aprovechar las herramientas que pueden mejorar mi trabajo. A lo largo de mi trayectoria he utilizado CRM, Excel, marketing digital y plataformas de comunicación y seguimiento comercial para organizar la actividad, conocer mejor la cartera y trabajar con mayor eficacia.</p>
+                <p>Actualmente utilizo herramientas de IA generativa, especialmente ChatGPT, como apoyo para el análisis comercial, la organización de información, la preparación de documentación y la mejora de flujos de trabajo. No las considero un sustituto del criterio profesional, sino una forma de trabajar mejor y dedicar más tiempo a las decisiones que realmente requieren experiencia.</p>
+                <p>También he adquirido conocimientos de HTML, CSS y JavaScript, que apliqué en el desarrollo y mantenimiento de esta página web. Más que una orientación profesional hacia la programación, este proyecto representa mi curiosidad tecnológica, mi autonomía y mi capacidad para aprender y aplicar herramientas nuevas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--CV pdf-->
+    <section class="container cv-section profile-cv-section">
+        <div class="row justify-content-center">
+            <a class="cv-view-button" href="files/CV-Andrea-Miggiano.pdf" data-href-es="files/CV-Andrea-Miggiano.pdf" data-href-en="files/CV-Andrea-Miggiano-EN.pdf" target="_blank" rel="noopener">
+                <svg class="cv-view-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 2h8l4 4v16H6z"></path>
+                    <path d="M14 2v5h5"></path>
+                    <path d="M8.5 15.5h7M8.5 18h5"></path>
+                </svg>
+                <span class="cv-view-copy">
+                    <span class="cv-view-title">Ver CV en PDF</span>
+                    <span class="cv-view-note">Se abre en una nueva pestaña</span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+<!--section for about me image set as a background in CSS to allow inner shadow effect-->
+
+    <section class="container profile-photo-section">
+        <!--justify-content-center is a boostrap class  https://bootstrapshuffle.com/es/classes/flexbox/justify-content-*-center -->
+        <div class="row justify-content-center">
+
+            <!-- empty container for background image in CSS. Tis solution is necessary for the inner shadow effect-->
+            <div id="empty-div" class="col-sm-6"></div>
+        </div>
+    </section>
+
+    <!--flickr-->
+    <section class="container photography-section">
+        <div class="row justify-content-center">
+            <p id="flickr-check">Fuera del trabajo, una de mis grandes aficiones es la fotografía. Puedes ver una selección de mis imágenes en Flickr.</p>
+        </div>
+        <div class="row justify-content-center">
+            <a class="flickr-link" href="https://www.flickr.com/photos/72793523@N07/" target="_blank" rel="noopener">
+                <img id="flickr" src="images/flickr.svg" alt="Flickr">
+                <span>Ver mis fotografías en Flickr</span>
+            </a>
+        </div>
+    </section>
+
+    <!--Professional footer-->
+    <footer class="container site-footer">
+        <div class="row justify-content-center">
+            <a class="linkedin-view-button" href="https://www.linkedin.com/in/andrea-miggiano/" target="_blank" rel="noopener">
+                <img class="linkedin-view-icon" src="images/linkedin-icon.svg" alt="" aria-hidden="true">
+                <span class="linkedin-view-copy">
+                    <span class="linkedin-view-title">Ver perfil en LinkedIn</span>
+                    <span class="linkedin-view-note">Se abre en una nueva pestaña</span>
+                </span>
+            </a>
+        </div>
+        <p class="site-copyright">&copy;
+            <script type="text/javascript">
+                copyright = new Date();
+                update = copyright.getFullYear();
+                document.write(+update + " " + "Andrea Miggiano");
+            </script>
+        </p>
+    </footer>
+
+    <!--Legal footer-->
+    <div class="container legal">
+
+        <nav class="row footer-links text-right2">
+            <a class="legal-left control-links a-legal-footer" href="privacy.html">Privacidad</a>
+            <a class="legal-right control-links a-legal-footer" href="contact.html">Contacto</a>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
- 
+
 </html>
