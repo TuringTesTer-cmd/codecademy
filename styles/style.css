@@ -163,7 +163,7 @@ body[data-page="experience"] section.intro p{margin:0!important;color:#4b4243;li
 body[data-page="education"] > section.container{padding-top:30px!important;padding-bottom:18px!important}
 body[data-page="education"] .row{row-gap:24px}
 body[data-page="education"] .edulogo{height:100%;padding:25px!important;border:1px solid var(--am-line);border-radius:20px;background:#fff;box-shadow:0 7px 24px rgba(61,39,42,.05)}
-body[data-page="education"] .academy-logo{max-height:72px!important;max-width:160px!important;width:auto!important;object-fit:contain;margin-bottom:20px!important}
+body[data-page="education"] .academy-logo{max-height:72px!important;max-width:160px!important;width:auto!important;object-fit:contain;margin-bottom:20px!important;padding-left:0!important}
 body[data-page="education"] .edulogo ul{padding-left:20px!important}
 body[data-page="education"] .li-bold{color:var(--am-burgundy)!important}
 
