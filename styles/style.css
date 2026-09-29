@@ -1363,3 +1363,19 @@ body[data-page="contact"] a[href^="mailto:"]:hover{
   }
 }
 
+/* ===== POST-PUBLICACIÓN · PWA/APP STANDALONE · zona segura inferior =====
+   En la app instalada, Android puede reservar/solapar parte del borde inferior
+   para la navegación del sistema. Se eleva únicamente el bloque inferior del menú. */
+@media (max-width:820px) and (display-mode:standalone),
+       (max-width:820px) and (display-mode:fullscreen){
+  .am-mobile-curtain{
+    padding-bottom:calc(72px + env(safe-area-inset-bottom, 0px))!important;
+    scroll-padding-bottom:calc(72px + env(safe-area-inset-bottom, 0px))!important;
+  }
+
+  .am-mobile-curtain .am-mobile-bottom{
+    margin-top:10px!important;
+    flex:0 0 auto!important;
+  }
+}
+
