@@ -3,23 +3,22 @@
 
 <head>
 <!--Block Search indexing with noindex-->
-    <meta name="robots" content="noindex, nofollow, nosnippet, noimageindex">
+    <meta name="robots" content="noindex">
 
     <title>Andrea Contacto</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="styles/style.css" type="text/css" rel="stylesheet">
-    <link rel="manifest" href="site.webmanifest">
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#790626">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#007fff">
     <meta name="apple-mobile-web-app-title" content="Andrea">
     <meta name="application-name" content="Andrea">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#00aba9">
     <!--Viewport for mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/device-fixes.js"></script>
@@ -28,7 +27,35 @@
             document.documentElement.classList.add('i18n-loading');
         }
     </script>
-    <script src="js/finalist-nav.js" defer></script>
+
+    <style>
+        .contact-icon-list{
+            list-style:none;
+            margin:0;
+            padding:0;
+        }
+        .contact-icon-row,
+        .contact-icon-link{
+            display:flex;
+            align-items:center;
+            gap:.55em;
+        }
+        .contact-icon-row{
+            min-height:1.8em;
+            margin:.15em 0;
+        }
+        .contact-icon-link{
+            color:inherit;
+            text-decoration:none;
+        }
+        .contact-icon{
+            display:block;
+            width:1.25em;
+            height:1.25em;
+            flex:0 0 1.25em;
+            object-fit:contain;
+        }
+    </style>
 </head>
 
 <body data-page="contact">
@@ -42,6 +69,8 @@
                 <a href="experience.html">Experiencia</a>
                 <span class="bar">·</span>
                 <a href="education.html">Formación</a>
+                <span class="bar">·</span>
+                <a href="contact.html" aria-current="page">Contacto</a>
             </nav>
         </div>
     </header>
@@ -56,11 +85,17 @@
     </section>
 
     <section class="contact-data container">
-        <ul>
-            <a id="email-link" href="mailto:andrea@miggiano.es?Subject=Contact%20from%20your%20personal%20web">
-                <li>Email: andrea@miggiano.es</li>
-            </a>
-            <li>Ubicación actual: Valladolid</li>
+        <ul class="contact-icon-list">
+            <li class="contact-icon-row">
+                <a id="email-link" class="contact-icon-link" href="mailto:andrea@miggiano.es?Subject=Contact%20from%20your%20personal%20web" aria-label="Email: andrea@miggiano.es">
+                    <img class="contact-icon" src="images/email_.svg" alt="" aria-hidden="true">
+                    <span>andrea@miggiano.es</span>
+                </a>
+            </li>
+            <li class="contact-icon-row" aria-label="Ubicación actual: Valladolid">
+                <img class="contact-icon" src="images/location.svg" alt="" aria-hidden="true">
+                <span>Valladolid</span>
+            </li>
         </ul>
     </section>
 
@@ -76,8 +111,10 @@
             </a>
         </div>
         <p class="site-copyright">&copy;
-            <script>
-                document.write(new Date().getFullYear() + " Andrea Miggiano");
+            <script type="text/javascript">
+                copyright = new Date();
+                update = copyright.getFullYear();
+                document.write(+update + " " + "Andrea Miggiano");
             </script>
         </p>
     </footer>
