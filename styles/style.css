@@ -1274,38 +1274,35 @@ body[data-page="contact"] a[href^="mailto:"]:hover{
 
 /* ===== POST-PUBLICACIÓN · cortina desktop + menú mobile robusto ===== */
 
-/* DESKTOP · la portada queda detrás y el contenido blanco la cubre al hacer scroll,
-   reproduciendo el efecto cortina de la web Caracoles. */
-@media(min-width:821px){
-  body[data-page="profile"]{
-    position:relative;
-  }
-
+/* DESKTOP · efecto cortina real, adaptado del mecanismo de Caracoles.
+   La FOTO queda anclada al viewport; hero, texto, degradado y contenido
+   conservan exactamente su scroll/maquetación actuales. */
+@media (min-width:821px) and (pointer:fine){
   body[data-page="profile"] .am-home-hero{
-    position:sticky!important;
-    top:0!important;
-    z-index:0!important;
+    background-attachment:fixed!important;
   }
+}
 
-  /* Capa blanca continua que acompaña al contenido situado tras el hero. */
-  body[data-page="profile"]::after{
-    content:"";
-    position:absolute;
-    z-index:1;
-    left:0;
-    right:0;
-    top:660px;
-    bottom:0;
-    background:#fff;
-    pointer-events:none;
+/* Mantener el MISMO encuadre que tenía la portada antes del efecto fixed.
+   La foto original es 1600×738 y el hero desktop actual mide 660px. */
+@media (min-width:821px) and (max-width:1430px) and (pointer:fine){
+  body[data-page="profile"] .am-home-hero{
+    background-size:auto 660px!important;
+    background-position:center top!important;
   }
+}
+@media (min-width:1431px) and (pointer:fine){
+  body[data-page="profile"] .am-home-hero{
+    background-size:100vw auto!important;
+    background-position:center calc(330px - 23.0625vw)!important;
+  }
+}
 
-  /* Todo el contenido posterior queda por encima de la cortina blanca. */
-  body[data-page="profile"] > section.container,
-  body[data-page="profile"] > footer.container,
-  body[data-page="profile"] > .legal{
-    position:relative;
-    z-index:2;
+/* Touch/tablet y reduced-motion conservan el comportamiento normal. */
+@media (min-width:821px) and (pointer:coarse),
+       (prefers-reduced-motion:reduce){
+  body[data-page="profile"] .am-home-hero{
+    background-attachment:scroll!important;
   }
 }
 
