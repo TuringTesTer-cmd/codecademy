@@ -3,20 +3,38 @@
 
 <head>
 <!--Block Search indexing with noindex-->
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex, nofollow, nosnippet, noimageindex">
     <title>Andrea Miggiano | Perfil</title>
     <meta charset="utf-8" />
+    <!-- Open Graph / vista previa social -->
+    <meta property="og:title" content="Andrea Miggiano · Perfil profesional">
+    <meta property="og:description" content="Experiencia comercial · Venta consultiva · Gestión de clientes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miggiano.es/">
+    <meta property="og:image" content="https://miggiano.es/images/og-am.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Andrea Miggiano">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Compatibilidad adicional para tarjetas sociales -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Andrea Miggiano · Perfil profesional">
+    <meta name="twitter:description" content="Experiencia comercial · Venta consultiva · Gestión de clientes.">
+    <meta name="twitter:image" content="https://miggiano.es/images/og-am.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="styles/style.css" type="text/css" rel="stylesheet">
+    <link rel="manifest" href="site.webmanifest">
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#007fff">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#790626">
     <meta name="apple-mobile-web-app-title" content="Andrea">
     <meta name="application-name" content="Andrea">
-    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <!--Viewport for mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,6 +44,7 @@
             document.documentElement.classList.add('i18n-loading');
         }
     </script>
+    <script src="js/finalist-nav.js" defer></script>
 </head>
 
 <body data-page="profile">
@@ -147,10 +166,8 @@
             </a>
         </div>
         <p class="site-copyright">&copy;
-            <script type="text/javascript">
-                copyright = new Date();
-                update = copyright.getFullYear();
-                document.write(+update + " " + "Andrea Miggiano");
+            <script>
+                document.write(new Date().getFullYear() + " Andrea Miggiano");
             </script>
         </p>
     </footer>

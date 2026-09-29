@@ -1,0 +1,21 @@
+# WEB AM — política de rastreo
+# Los buscadores generales no se bloquean aquí para que puedan leer
+# las directivas noindex/nofollow/nosnippet/noimageindex de cada HTML.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-SearchBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /

@@ -3,21 +3,22 @@
 
 <head>
 <!--Block Search indexing with noindex-->
-    <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex, nofollow, nosnippet, noimageindex">
 
     <title>Andrea Formación</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <link href="styles/style.css" type="text/css" rel="stylesheet">
+    <link rel="manifest" href="site.webmanifest">
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#007fff">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#790626">
     <meta name="apple-mobile-web-app-title" content="Andrea">
     <meta name="application-name" content="Andrea">
-    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <!--Viewport for mobile devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +28,7 @@
             document.documentElement.classList.add('i18n-loading');
         }
     </script>
+    <script src="js/finalist-nav.js" defer></script>
 </head>
 
 <body class="no-hero-page" data-page="education">
@@ -55,8 +57,8 @@
                 <div class="font-weight-bold edulogo">
                     <img class="academy-logo" src="images/logo_uva.webp" alt="university of valladolid logo">
                     <ul>
-                        <li class="li-title">Universidad de Valladolid</li>
                         <li class="li-nostyle li-bold">Licenciado en Filología Alemana</li>
+                        <li class="li-nostyle education-center">Universidad de Valladolid</li>
                         <li class="li-nostyle">Formación de profesorado en idiomas extranjeros</li>
                         <li class="li-nostyle li-cursive">1993 - 1998</li>
                     </ul>
@@ -67,8 +69,8 @@
                 <div class="font-weight-bold edulogo">
                     <img class="academy-logo" src="images/camara_logo.webp" alt="valladolid chamber of commerce logo">
                     <ul>
-                        <li class="li-title">Escuela de Negocios de la Cámara de Comercio de Valladolid</li>
                         <li class="li-nostyle li-bold">Master en Comercio Exterior, Negocios y Comercio internacional</li>
+                        <li class="li-nostyle education-center">Escuela de Negocios de la Cámara de Comercio de Valladolid</li>
                         <li class="li-nostyle">Titulación: Duración 800 horas.</li>
                         <li class="li-nostyle">Prácticas en Departamento de Exportación de HERMI S.L.: Investigación de nuevos Mercados. Búsqueda de clientes en Alemania e Italia. Participación en feria del sector Alimentación: CIBUS 2000 Parma (Italia).</li>
                         <li class="li-nostyle li-cursive">1999 - 2000</li>
@@ -87,8 +89,8 @@
                         <img class="academy-logo" src="images/inigo_saenz_de_urturi.webp" alt="google acivate logo">
                         <ul>
                             <li class="li-nostyle li-bold">El Poder sin Limite en las Ventas</li>
-                            <li class="li-circle-style">Iñigo Sáenz de Urturi - Experto en ventas de relación.</li>
-                            <li class="li-circle-style">¿QUÉ ES VENDER?</li>
+                            <li class="li-circle-style"><strong class="edu-emphasis">Iñigo Sáenz de Urturi</strong> - Experto en ventas de relación.</li>
+                            <li class="li-circle-style edu-emphasis">¿QUÉ ES VENDER?</li>
                             <li class="li-circle-style">Vender: Establecer una Relación con otras personas con un Propósito Definido.</li>
                             <li class="li-circle-style">¿Cómo se establece una relación?: A través de la comunicación.</li>
                             <li class="li-circle-style">Vender es comunicar.</li>
@@ -104,8 +106,8 @@
                         <img class="academy-logo" src="images/inigo_saenz_de_urturi.webp" alt="linkedin logo">
                         <ul>
                             <li class="li-nostyle li-bold">CLC - Crece Lidera Conecta</li>
-                            <li class="li-circle-style">Iñigo Sáenz de Urturi - Experto en Psicología del Cambio.</li>
-                            <li class="li-circle-style">Crece - Lidera - Conecta, es una invitación a que reconozcas, descubras y uses los recursos más potentes que ya tienes: el valor, la fe, la determinación, la pasión, las ganas de crecer, de contribuir, de celebrar la vida en el nivel más profundo y potente.</li>
+                            <li class="li-circle-style"><strong class="edu-emphasis">Iñigo Sáenz de Urturi</strong> - Experto en Psicología del Cambio.</li>
+                            <li class="li-circle-style"><strong class="edu-emphasis">Crece - Lidera - Conecta</strong>, es una invitación a que reconozcas, descubras y uses los recursos más potentes que ya tienes: el valor, la fe, la determinación, la pasión, las ganas de crecer, de contribuir, de celebrar la vida en el nivel más profundo y potente.</li>
                             <li class="li-nostyle li-cursive">2019</li>
                         </ul>
                     </div>
@@ -168,10 +170,8 @@
             </a>
         </div>
         <p class="site-copyright">&copy;
-            <script type="text/javascript">
-                copyright = new Date();
-                update = copyright.getFullYear();
-                document.write(+update + " " + "Andrea Miggiano");
+            <script>
+                document.write(new Date().getFullYear() + " Andrea Miggiano");
             </script>
         </p>
     </footer>
