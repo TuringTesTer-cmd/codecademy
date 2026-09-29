@@ -1360,18 +1360,21 @@ body[data-page="contact"] a[href^="mailto:"]:hover{
   }
 }
 
-/* ===== POST-PUBLICACIÓN · PWA/APP STANDALONE · zona segura inferior =====
-   En la app instalada, Android puede reservar/solapar parte del borde inferior
-   para la navegación del sistema. Se eleva únicamente el bloque inferior del menú. */
-@media (max-width:820px) and (display-mode:standalone),
-       (max-width:820px) and (display-mode:fullscreen){
+/* ===== MOBILE · reserva inferior robusta para Chrome + PWA Android =====
+   Evita que idioma/CV/LinkedIn/email queden bajo la barra de navegación del sistema. */
+@media(max-width:820px){
   .am-mobile-curtain{
-    padding-bottom:calc(72px + env(safe-area-inset-bottom, 0px))!important;
-    scroll-padding-bottom:calc(72px + env(safe-area-inset-bottom, 0px))!important;
+    top:72px!important;
+    bottom:0!important;
+    height:auto!important;
+    min-height:0!important;
+    box-sizing:border-box!important;
+    padding-bottom:calc(64px + env(safe-area-inset-bottom, 0px))!important;
+    scroll-padding-bottom:calc(64px + env(safe-area-inset-bottom, 0px))!important;
   }
 
   .am-mobile-curtain .am-mobile-bottom{
-    margin-top:10px!important;
+    margin:12px auto 0!important;
     flex:0 0 auto!important;
   }
 }
