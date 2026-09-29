@@ -62,7 +62,11 @@
         if (!href || href.startsWith('#') || /^(mailto:|tel:|javascript:)/i.test(href)) return false;
         if (anchor.hasAttribute('data-href-es')) return false;
         const url = new URL(href, document.baseURI);
-        if (window.location.protocol !== 'file:' && url.origin !== window.location.origin) return false;
+
+        // Los enlaces HTTP(S) externos nunca forman parte de la navegación interna,
+        // también cuando la web se prueba localmente mediante file://.
+        if (/^https?:$/i.test(url.protocol) && url.origin !== window.location.origin) return false;
+
         return /\.html$/i.test(url.pathname) || url.pathname.endsWith('/');
     }
 
