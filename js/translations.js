@@ -73,9 +73,9 @@ window.siteTranslations = {
     "experience": {
       "Experiencia profesional | Andrea Miggiano": "Professional Experience | Andrea Miggiano",
       "Experiencia profesional": "Professional Experience",
-      "Makro Paper Trainera": "Makro Paper Trainera",
+      "Makro Paper - Campus": "Makro Paper - Campus",
       "Delegado Comercial": "Sales Representative",
-      "05/2025 - Actualidad": "05/2025 - Present",
+      "05/2025 - 09/2026": "05/2025 - 09/2026",
       "Gestión y desarrollo de cartera de librerías, papelerías y suministradores de oficina.": "Management and development of a portfolio of bookshops, stationery retailers and office suppliers.",
       "Planificación de rutas, campañas comerciales y seguimiento de objetivos.": "Route planning, sales campaigns and target monitoring.",
       "Promoción e implantación de la marca propia Campus en la cartera de clientes.": "Promotion and introduction of the Campus own brand across the customer portfolio.",
