@@ -1393,3 +1393,12 @@ body[data-page="contact"] a[href^="mailto:"]:hover{
   }
 }
 
+/* ===== MOBILE · logo AM igualado visualmente al diámetro del hamburger =====
+   El círculo granate ocupa 1144/1254 del SVG; 58.1 px de caja ≈ 53 px visibles. */
+@media(max-width:820px){
+  .am-mobile-brand .am-site-logo{
+    width:58.1px!important;
+    height:58.1px!important;
+  }
+}
+
